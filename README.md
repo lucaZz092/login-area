@@ -38,17 +38,21 @@ Este projeto consiste em uma **interface de login e cadastro de usuários**, des
 - **Mesma folha de estilo (`style.css`)** aplicada para login e cadastro
 
 ---
+### 🔧 JavaScript
+- Validação dos campos de e-mail e senha
+- 
+---
 
 ## 🔧 Tecnologias Usadas
 - **HTML5**
 - **CSS3**
+- **JAVASCRIPT**
 - **Boxicons** (biblioteca de ícones)
 - **Google Fonts** (Poppins)
 
 ---
 
 ## 🚀 Próximos Passos (Sugestões)
-- Adicionar validação em JavaScript
 - Conectar com back-end usando Node.js ou Firebase
 - Armazenar dados de login e autenticar usuários
 - Adicionar redirecionamento após login/cadastro
