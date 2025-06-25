@@ -5,21 +5,34 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Login Area</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 
 </head>
 <body>
+    <!-- loader --> 
+     <div id="preloader">
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+        </div>
+    </div>
+    <div id="conteudo" style="display: none;">
     <main class="container">
-        <form action="#">
-
+        <form action="#" id="loginForm">  
             <h1>Login Area</h1>
-            <div class="input-box" id="email">
-                <input type="email" placeholder="E-mail" required>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <span class="error-msg"></span>
                 <i class="bx bxs-user"></i>
 
             </div>
 
-            <div class="input-box" id="password">
-                <input type="password" placeholder="Password" required>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="error-msg"></span>
                 <i class="bx bxs-lock-alt"></i>
             </div>
 
@@ -31,10 +44,10 @@
                     </svg>
                     <span>remember me</span>
                     </label>
-                <a href="#">Forgot my password</a>
+                <a href="forgot-password.html">Forgot my password</a>
             </div>
 
-            <button type="submit" class="login">
+            <button type="submit" class="login" id="login-msg" onclick="mostrarMensagem()">
                 Login
             </button>
 
@@ -43,5 +56,7 @@
             </div>
         </form>
     </main>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
