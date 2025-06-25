@@ -70,3 +70,10 @@ const homeBtn = document.getElementById('homeButton')
 homeBtn.addEventListener('click', function(){
     history.back();
 })
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  const conteudo = document.getElementById("conteudo");
+
+  if (preloader) preloader.style.display = "none";
+  if (conteudo) conteudo.style.display = "block";
+});
